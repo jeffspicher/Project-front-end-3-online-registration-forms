@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    max-width: 2000px;
+    font-family: 'Andika New Basic', sans-serif;
+    margin:0;
+}
+
+fieldset{
+    border:none;
+    padding: 3px 0 0 0;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+        list-style:none;
+}   
+
+/* Header*/
+header{
+background-color:#2D3943;
+color:white;
+text-align: center;
+font-size:2.5vw;
+margin:0;
+padding:2vh;
+}
+
+/* Forms title */
+.head{
+    text-align: center;
+}
+
+h2{
+   margin-top:2vh;
+   font-size:4vw;
+}
+
+.p1{
+    border-bottom:2px solid black;
+    font-weight:100;
+    font-size:2.5vw;
+    width:95vw;
+    padding-bottom:4vh;
+    margin:2vh auto 0;
+}
+
+/* Forms */
+
+section, fieldset{
+    margin:5px auto 0;
+    padding-top:2vh;
+    width:95vw;
+    margin: 0 auto 0;
+    display:flex;
+    flex-direction:column;
+
+}
+.main-field{
+border-top:2px solid lightgray;
+margin-top:5px;
+}
+
+
+legend{
+    font-size:3vw;
+    font-weight:200;
+}
+
+.hint{
+    font-size:1.5vw;
+margin: 0 2vh;
+}
+
+input,select{
+    border-radius:5px;
+    padding:0.5rem;          /* pdding for the text*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height:6vh;
+    margin: 2vh 0  4vh;
+    font-size:2.5vw;
+    height:6vh;
+}
+
+::placeholder, optgroup{
+    font-size:2.5vw;
+}
+
+label{
+font-size:2vw;
+margin-top:2vh;
+}
+
+.form1{
+border-bottom:2px solid black;
+margin-bottom:3vh;
+}
+
+/*Second form */
+.labelcheck, .labelradio{
+    font-size:15px;
+    margin:0;
+}
+
+.inputcheck, .inputradio{
+    height:0;
+    margin:0 10px 0 0;
+}
+
+input[type=checkbox],input[type=radio]{
+width:2vw;
+height:2vh;
+}
+
+.checkradio{
+    display:flex;
+    padding-top:3vh;
+}
+
+
+input[type=checkbox]:checked + label, input[type=radio]:checked + label{
+font-weight:bolder;
+border-color:blue;
+  } 
+
+textarea{
+    margin:2vh 0 4vh;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #999;
+    border: 1px solid #ccc;
+    font-size:2vw;
+    height:10vh;
+}
+
+.submit-button{
+    background-color:teal;
+    color:white;
+    border-radius:5px;
+    height:6vh;
+    box-shadow:none;
+    border:none;
+    margin-bottom:2vh;
+}
+
+.reset-button{
+    background-color:tomato;
+    color:white;
+    border-radius:5px;
+    height:6vh;
+    box-shadow:none;
+    border:none;
+    margin-bottom:4vh;
+}
+
+
+footer{
+    text-align:center;
+    color:lightgray;
+    font-size: 2vw;
+    font-style:italic;
+    margin-bottom:6vh;
+}
+
+/*Transition effect */ 
+input, textarea, button, .inputcheck, .inputradio,select{ 
+    transition:all 0.3s ease-out;
+    }
+    
+    input:focus, textarea:focus, button:focus,select:focus{
+    outline: none;
+    box-shadow: -5px 10px 10px 0px rgba(0,0,0,0.75);
+    }
+    
+    
+    .inputcheck:focus, .inputradio:focus {      /* outline for checkboxes can also use box shadow*/
+        box-shadow: 0 0 4px 1px rgb(141, 148, 144);
+    }
+    
+    
+    input:hover, textarea:hover, button:hover,select:hover{
+        outline: none;
+        box-shadow: -5px 10px 10px 0px rgba(163, 105, 180, 0.75);
+        }
+        
+    .inputcheck:hover, .inputradio:hover {      /* outline for checkboxes can also use box shadow*/
+        box-shadow: 0 0 4px 1px rgb(141, 148, 144);
+        }
+    
+        /*Footer */
+        footer{
+            width: 100vw;
+            background-color: #2D3943;
+            color:white;
+            text-align:center;
+            font-size:2.5vw;
+            margin:0;
+            padding:2vh;
+        } 
+
+@media screen and (min-width: 768px) {
+
+    /* head and subhead*/ 
+    h1{
+    margin:0;
+    font-size:2vw;
+    }
+
+    h2{
+    font-size:2.5vw; 
+    margin-top:5vh;
+    }
+
+    .p1{
+        font-size:2vw;
+        padding: 0 0 6vh;
+        width: 75vw;
+    }
+
+
+    /* Hero forms section  */ 
+
+    section, fieldset{
+    width:75vw;
+    padding:0;
+    }
+
+    .firsth3{
+        padding-top:4vh;
+    }
+
+    legend{
+        font-size:2vw;
+    }
+
+    .hint{
+        font-size:1vw;
+        padding-bottom:2vh;
+    }
+
+    label{
+        font-size:1.5vw;
+        width:20%;
+        align-self: center;
+        margin:0;
+    }
+
+    .form1{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    }
+
+    input,select{
+        width:80%;
+        margin:2vh auto 2vh;
+        font-size:1vw;
+    }
+
+    ::placeholder, optgroup{
+    font-size:1vw;
+    }
+
+
+    input:nth-of-type(8) {
+        width: 20%;
+        margin: 2vh auto 2vh 0 ;
+    }
+    
+    .timecode{
+        width:100%;
+        margin-top: 3vh;
+    }
+
+    select{
+        width:100%;
+        margin:2vh 0 4vh 0;
+    }
+
+    /*Second form*/ 
+    .legend2{
+        margin:3vh 0 2vh;
+        width:75vw;
+    }
+
+    .form2{
+        flex-direction: column;
+    }
+
+    .form2 label{
+    align-self:flex-start;  
+    margin:10px 0 0 0;
+    width:100%;
+    }
+
+    .form2 input{
+    margin:10px 0 0 0;    
+    }
+
+    .labelcheck,.labelradio{
+        font-size:17px;
+    }
+
+    .checkradio{
+    padding:0;
+    }
+
+    .form2 .newsletterformat{
+        margin-top:4vh;
+    }
+
+    textarea{
+        font-size:1vw;
+    }
+}
+
+
