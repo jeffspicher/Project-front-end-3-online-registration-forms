@@ -5,7 +5,7 @@
     margin:0;
 }
 
-fieldset{
+fieldset,.form2{
     border:none;
     padding: 3px 0 0 0;
 }
@@ -49,7 +49,7 @@ h2{
 
 /* Forms */
 
-section, fieldset{
+section, fieldset,.form2{
     margin:5px auto 0;
     padding-top:2vh;
     width:95vw;
@@ -84,8 +84,13 @@ input,select{
     height:6vh;
 }
 
+input[id="name"]::placeholder,input[id="email"]::placeholder {
+text-align: right;
+}
+
 ::placeholder, optgroup{
     font-size:2.5vw;
+
 }
 
 label{
@@ -93,9 +98,23 @@ font-size:2vw;
 margin-top:2vh;
 }
 
+.zip{
+    width:30%;
+}
+
 .form1{
 border-bottom:2px solid black;
 margin-bottom:3vh;
+}
+
+.form_single_wrap{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+select{
+    width:50%;
 }
 
 /*Second form */
@@ -189,6 +208,7 @@ input, textarea, button, .inputcheck, .inputradio,select{
         box-shadow: 0 0 4px 1px rgb(141, 148, 144);
         }
     
+
         /*Footer */
         footer{
             width: 100vw;
@@ -199,7 +219,6 @@ input, textarea, button, .inputcheck, .inputradio,select{
             margin:0;
             padding:2vh;
         } 
-
 @media screen and (min-width: 768px) {
 
     /* head and subhead*/ 
@@ -222,7 +241,7 @@ input, textarea, button, .inputcheck, .inputradio,select{
 
     /* Hero forms section  */ 
 
-    section, fieldset{
+    section, fieldset,.form2{
     width:75vw;
     padding:0;
     }
@@ -264,21 +283,23 @@ input, textarea, button, .inputcheck, .inputradio,select{
     }
 
 
-    input:nth-of-type(8) {
+    input:nth-of-type(8) {          /*nth for zip */
         width: 20%;
         margin: 2vh auto 2vh 0 ;
     }
     
-    .timecode{
-        width:100%;
-        margin-top: 3vh;
-    }
-
     select{
-        width:100%;
+        width:25%;
         margin:2vh 0 4vh 0;
     }
 
+    .form_single_wrap{
+        display:flex;
+        flex-wrap:nowrap;
+        width:100%;
+        flex-direction:row;
+    }
+    
     /*Second form*/ 
     .legend2{
         margin:3vh 0 2vh;

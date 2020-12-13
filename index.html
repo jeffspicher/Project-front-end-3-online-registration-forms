@@ -18,25 +18,25 @@
     </div>
 
 <form action="data.html" method="post"> 
-<fieldset class="main-field">  
+<section class="main-field">  
 
-         <fieldset class="firstsection">
-             <legend class= firsth3>Contact Information</legend>
+<fieldset class="firstsection">
+            <legend class= firsth3>Contact Information</legend>
             <p class="hint">* - required field</p>
-        </fieldset>       
-       
+
+    
             
 
 
     <section class="form1">
                 <label for="name">Full Name*</label>
-                <input type="text" id="name" name="name"  placeholder="John &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required" required>
+                <input type="text" id="name" name="name"  placeholder="required" required>
 
                 <label for="birthdate">Birthdate*</label>
                 <input type="date" id="birthdate" name="birthdate" required>
 
                 <label for="email">Email Address*</label>
-                <input type="email" id="email" name="email" placeholder="John@example.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required" required>
+                <input type="email" id="email" name="email" placeholder="required" required>
 
                 <label for="tel">Phone number</label>
                 <input type="tel" id="tel" name="tel" placeholder="french number: 01 23 45 67 89 or +33 1 23 45 67 89 "
@@ -51,10 +51,12 @@
                 <label for="state">State</label>
                 <input type="text" id="state" name="state" placeholder="Ile de France">
 
+                
                 <label for="zip">Zip Code</label>
-                <input class="zip" type="number" id="zip" name="zip" placeholder="75001" min="0">
-
-                <label class="timecode" for="selectcode">How many time do you spend coding each day:</label>
+                <input class="zip" type="text" id="zip" name="zip" placeholder="75001">
+        
+            <div class="form_single_wrap">
+                <label class="timecode" for="selectcode">How many time do you code each day:</label>
                 <select name="select" id="selectcode">
                 <optgroup label="Hours of code per day">                    
                     <option class="default" value="">--Please choose an option--</option>
@@ -65,17 +67,19 @@
                     <option value="more">more than 10 hours</option>
                 </optgroup>
             </select>
+            </div>
+            
     </section>               
-       
- 
+</fieldset>        
 
-   
+
+
     <fieldset class="form2">
         <legend class="legend2 form2"><h3>Newsletter</h3></legend>
             <label>Select the newsletter you would like to receive:</label>
-    </fieldset>
 
-    <fieldset class="form2">
+
+    <div class="form2">
         <div class=checkradio>
             <input class="inputcheck" type="checkbox" id="html" name="newsletter">
             <label class=labelcheck for="html">HTML News</label>
@@ -104,16 +108,17 @@
             <label class="labelradio" for="plaintext">Plain text</label>
         </div>
 
-          <label for="textarea">Other topics you'd like to hear about: </label>
-          <textarea id="textarea" name="textarea-topics"></textarea>
+        <label for="textarea">Other topics you'd like to hear about: </label>
+        <textarea id="textarea" name="textarea-topics"></textarea>
 
-          <button class="submit-button" type="submit">Sign Up</button>
-          <button class="reset-button" type="reset">Reset</button>
-        </fieldset>   
-
+        <button class="submit-button" type="submit">Sign Up</button>
+        <button class="reset-button" type="reset">Reset</button>
+    </div>   
 
 </fieldset>
+</section>
 </form>   
+
 <footer>Copyright © The Code Review</footer>
 
 </body>
