@@ -20,7 +20,7 @@
 <form action="data.html" method="post"> 
 <section class="main-field">  
 
-<fieldset class="firstsection">
+ <fieldset class="firstsection">
             <legend class= firsth3>Contact Information</legend>
             <p class="hint">* - required field</p>
 
@@ -53,7 +53,7 @@
 
                 
                 <label for="zip">Zip Code</label>
-                <input class="zip" type="text" id="zip" name="zip" placeholder="75001">
+                <input class="zip" type="text" id="zip" name="zip" placeholder="75001 Paris">
         
             <div class="form_single_wrap">
                 <label class="timecode" for="selectcode">How many time do you code each day:</label>
@@ -70,56 +70,56 @@
             </div>
             
     </section>               
-</fieldset>        
+ </fieldset>        
 
 
 
     <fieldset class="form2">
-        <legend class="legend2 form2"><h3>Newsletter</h3></legend>
-            <label>Select the newsletter you would like to receive:</label>
+            <legend class="legend2 form2"><h3>Newsletter</h3></legend>
+                <label>Select the newsletter you would like to receive:</label>
 
 
-    <div class="form2">
-        <div class=checkradio>
-            <input class="inputcheck" type="checkbox" id="html" name="newsletter">
-            <label class=labelcheck for="html">HTML News</label>
-        </div>
+        <div class="form2">
+            <div class=checkradio>
+                <input class="inputcheck" type="checkbox" id="html" name="newsletter">
+                <label class=labelcheck for="html">HTML News</label>
+            </div>
 
-        <div  class=checkradio>
-            <input class="inputcheck" type="checkbox" id="css" name="newsletter">
-            <label class="labelcheck"  for="css">CSS News</label>
+            <div  class=checkradio>
+                <input class="inputcheck" type="checkbox" id="css" name="newsletter">
+                <label class="labelcheck"  for="css">CSS News</label>
+            </div>   
+            
+            <div  class=checkradio>
+                <input class="inputcheck" type="checkbox" id="javascript" name="newsletter">
+                <label class="labelcheck" for="javascript">Javascript News</label>
+            </div>   
+
+
+            <label class="newsletterformat">Newsletter format</label>
+
+            <div  class=checkradio>
+                <input class="inputradio" type="radio" id="htmlformat" name="format">
+                <label class="labelradio" for="htmlformat">HTML</label>
+            </div>
+            
+            <div  class=checkradio>
+                <input class="inputradio" type="radio" id="plaintext" name="format" >
+                <label class="labelradio" for="plaintext">Plain text</label>
+            </div>
+
+            <label for="textarea">Other topics you'd like to hear about: </label>
+            <textarea id="textarea" name="textarea-topics"></textarea>
+
+            <button class="submit-button" type="submit">Sign Up</button>
+            <button class="reset-button" type="reset">Reset</button>
         </div>   
-        
-        <div  class=checkradio>
-            <input class="inputcheck" type="checkbox" id="javascript" name="newsletter">
-            <label class="labelcheck" for="javascript">Javascript News</label>
-        </div>   
-
-
-        <label class="newsletterformat">Newsletter format</label>
-
-        <div  class=checkradio>
-            <input class="inputradio" type="radio" id="htmlformat" name="format">
-            <label class="labelradio" for="htmlformat">HTML</label>
-        </div>
-        
-        <div  class=checkradio>
-            <input class="inputradio" type="radio" id="plaintext" name="format" >
-            <label class="labelradio" for="plaintext">Plain text</label>
-        </div>
-
-        <label for="textarea">Other topics you'd like to hear about: </label>
-        <textarea id="textarea" name="textarea-topics"></textarea>
-
-        <button class="submit-button" type="submit">Sign Up</button>
-        <button class="reset-button" type="reset">Reset</button>
-    </div>   
-
-</fieldset>
+    </fieldset>
 </section>
 </form>   
 
 <footer>Copyright © The Code Review</footer>
+
 
 </body>
 </html>
