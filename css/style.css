@@ -124,6 +124,10 @@ select{
     margin:0;
 }
 
+.form2{
+padding:0;
+}
+
 .inputcheck, .inputradio{
     height:0;
     margin:0 10px 0 0;
@@ -144,6 +148,10 @@ input[type=checkbox]:checked + label, input[type=radio]:checked + label{
 font-weight:bolder;
 border-color:blue;
   } 
+
+.labelradio:last-child{
+    margin-bottom:1vh;
+}
 
 textarea{
     margin:2vh 0 4vh;
@@ -176,14 +184,6 @@ textarea{
 }
 
 
-footer{
-    text-align:center;
-    color:lightgray;
-    font-size: 2vw;
-    font-style:italic;
-    margin-bottom:6vh;
-}
-
 /*Transition effect */ 
 input, textarea, button, .inputcheck, .inputradio,select{ 
     transition:all 0.3s ease-out;
@@ -209,8 +209,7 @@ input, textarea, button, .inputcheck, .inputradio,select{
         box-shadow: 0 0 4px 1px rgb(141, 148, 144);
         }
     
-
-        /*Footer */
+    /*Footer */
         footer{
             width: 100% ;
             background-color: #2D3943;
@@ -219,6 +218,7 @@ input, textarea, button, .inputcheck, .inputradio,select{
             font-size:2.5vw;
             margin:0;
             padding:2vh;
+            font-style:italic;
         }   
 @media screen and (min-width: 768px) {
 
@@ -271,6 +271,7 @@ input, textarea, button, .inputcheck, .inputradio,select{
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-between;
+    margin-bottom:0;
     }
 
     input,select{
